@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Note 004 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Georgia,serif;color:#111;background:#fdfdfc}
+h1{font-size:1.75rem;line-height:1.25;margin:0 0 .3rem}h2{font-size:1.15rem;margin:2.2rem 0 .6rem}
+a{color:#0b5}nav{margin:0 0 2.5rem}table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem}
+th,td{border-bottom:1px solid #e3e3e0;padding:.42rem .6rem;text-align:left}
+th{font-weight:600;background:#f6f6f4}blockquote{margin:1.2rem 0;padding:.2rem 0 .2rem 1rem;
+border-left:3px solid #ddd;color:#444}code{background:#f2f2ef;padding:.1rem .3rem;border-radius:3px}
+.sub{color:#666;font-size:.9rem;margin:0 0 2rem}hr{border:0;border-top:1px solid #e3e3e0;margin:2.5rem 0}
+ul{padding-left:1.2rem}footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid #e3e3e0;
+color:#666;font-size:.9rem}
+@media(prefers-color-scheme:dark){body{background:#141413;color:#e8e6e3}th{background:#1e1e1c}
+th,td{border-color:#2e2e2b}code{background:#232320}a{color:#5c9}blockquote{border-color:#333;color:#aaa}
+footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>Note 004</h1><p class="sub">It is not only failing more. It is taking twice as long.</p><p><strong>It is not only failing more. It is taking twice as long.</strong></p>
+<p><em>Michael Arthur · 2026-08-12</em></p>
+<p><em>Source: LBNL Queued Up 2026 Edition (CC BY 4.0), through end-2025. Analysis my own.</em></p>
+<hr>
+<p>Notes 002 and 003 established that the failure rate rose and that it rose almost</p>
+<p>everywhere. This is the other axis: <strong>for the projects that do get built, how</p>
+<p>long does it take?</strong></p>
+<h2>Median years from request to operation, by filing cohort</h2>
+<p>Only projects that reached service. Cohorts with fewer than 15 completions omitted.</p>
+<table>
+<tr><th>Filed</th><th>n</th><th>Median years</th></tr>
+<tr><td>2003</td><td>18</td><td><strong>1.5</strong></td></tr>
+<tr><td>2007</td><td>115</td><td>2.0</td></tr>
+<tr><td>2011</td><td>59</td><td>2.5</td></tr>
+<tr><td>2013</td><td>62</td><td>2.9</td></tr>
+<tr><td>2015</td><td>67</td><td>3.8</td></tr>
+<tr><td>2016</td><td>107</td><td><strong>4.7</strong></td></tr>
+<tr><td><strong>2017</strong></td><td>70</td><td><strong>5.0</strong></td></tr>
+<tr><td>2018</td><td>55</td><td>4.9</td></tr>
+<tr><td>2019</td><td>75</td><td>4.4</td></tr>
+</table>
+<p><strong>A project filing in 2003 was operating in eighteen months. One filing in 2017</p>
+<p>took five years.</strong></p>
+<h2>The part that is easy to misread</h2>
+<p>The 2019 and 2020 cohorts show <em>shorter</em> medians — 4.4 and 3.2 years. That is not</p>
+<p>an improvement. <strong>It is survivorship.</strong> Only the fastest projects from those</p>
+<p>cohorts have completed at all; the slow ones are still in the queue or have</p>
+<p>withdrawn, and they cannot appear in a median of completions.</p>
+<p>Read those two rows as a floor, not a trend.</p>
+<h2>What it means together with Note 002</h2>
+<p>A 2017 filing faced roughly <strong>85% odds of never being built, and five years to</p>
+<p>find out.</strong> A 2003 filing faced 64% odds and eighteen months.</p>
+<p><strong>The cost of a queue position is not the interconnection fee. It is the option</p>
+<p>value of five years of capital and site control</strong>, spent on a coin that now lands</p>
+<p>badly five times in six.</p>
+<hr>
+<p>*Method: completions only, grouped by <code>q_year</code>, median of <code>on_date − q_date</code>.</p>
+<p>Free at emp.lbl.gov/queues.*</p>
+<p><em>I do custom queue analysis for specific projects and zones. Reply and ask.</em></p><footer>Michael Arthur · commercial energy — supply contracts, bill audit, PJM queue research<br>kookyeus@yahoo.com<br><br>Every figure is a count from the free LBNL dataset at <a href="https://emp.lbl.gov/queues">emp.lbl.gov/queues</a>. If you think one is wrong, tell me which and why.</footer></body></html>
