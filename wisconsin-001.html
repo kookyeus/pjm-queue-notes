@@ -37,20 +37,24 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 
 <h2>Why this is worth ten minutes of your time</h2>
 
-<p>A demand charge is set by your single highest fifteen-minute interval in the month. If that interval falls inside the window, you pay for it. If it falls outside — a night shift, a 6AM startup, a Saturday run — <strong>you pay nothing for demand at all.</strong></p>
+<p><strong>CORRECTED 2026-08-16.</strong> The first version of this note said that if your peak falls outside the window "you pay nothing for demand at all", and put the gap at about $24,750 a year. <strong>That was wrong, and I found it by building the calculator rather than doing the arithmetic by hand.</strong> The corrected figures are below and the reasoning is at the foot.</p>
 
-<p>Worked on a 120 kW site drawing 40,000 kWh a month, in summer:</p>
+<p>Your demand charge is set by your highest fifteen-minute interval <strong>that falls inside the window</strong> — not by your highest interval overall. Moving a single spike out of the window does not take the charge to zero. It takes it down to whatever your <em>next</em> highest in-window interval is, and for most plants that is still substantial.</p>
+
+<p>Three cases on a 120 kW site, summer, all computed from interval data:</p>
 
 <table>
-<tr><th></th><th>On Cg-5, the flat schedule</th><th>Cg-20, peak <strong>inside</strong> the window</th><th>Cg-20, peak <strong>outside</strong> it</th></tr>
-<tr><td>Energy</td><td>$4,636</td><td>$2,269</td><td>$2,269</td></tr>
-<tr><td>Demand</td><td>—</td><td>$2,410</td><td><strong>$0</strong></td></tr>
-<tr><td>Customer demand</td><td>—</td><td>$313</td><td>$313</td></tr>
-<tr><td>Customer charge</td><td>$99</td><td>$92</td><td>$92</td></tr>
-<tr><td><strong>Monthly</strong></td><td><strong>$4,736</strong></td><td><strong>$5,083</strong></td><td><strong>$2,673</strong></td></tr>
+<tr><th></th><th>Monthly bill</th><th>Against Cg-5</th></tr>
+<tr><td><strong>Daytime plant</strong> — 74 kW during the window, peak at 11AM</td><td>Cg-5 is cheaper</td><td><strong>Cg-20 costs you $407 a month more</strong></td></tr>
+<tr><td><strong>Same plant, peak moved to 2AM</strong></td><td>Cg-20 $4,137</td><td><strong>saves $6,210 a year</strong></td></tr>
+<tr><td><strong>True night operation</strong> — nothing drawn 8AM–6PM</td><td>Cg-20 $2,444</td><td><strong>saves $35,863 a year</strong></td></tr>
 </table>
 
-<p><strong>About $24,750 a year between the best and worst outcome on the same site, drawing the same power.</strong></p>
+<p><strong>So the size of the prize depends entirely on how much load you have in the window, and the honest range is nothing at all to about $36,000.</strong></p>
+
+<p>Two things follow that matter more than the headline:</p>
+
+<p>1. <strong>Cg-20 is the wrong schedule for an ordinary daytime plant.</strong> On the first    row it costs $407 a month <em>more</em> than the flat rate. Anyone who tells you    time-of-use is always cheaper has not run the numbers. 2. <strong>Moving one spike is worth much less than most people assume.</strong> The value is    in shifting <em>load</em>, not in shifting a <em>peak</em> — and only a plant that can    genuinely clear the window sees the large number.</p>
 
 <p>Note the middle column. <strong>Cg-20 is the wrong schedule for a plant that peaks at eleven in the morning</strong> — it costs about $350 a month more than the flat rate. Anyone who tells you time-of-use is always cheaper has not done this arithmetic.</p>
 
