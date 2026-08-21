@@ -1,0 +1,106 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PJM Queue — Note 009 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Georgia,serif;color:#111;background:#fdfdfc}
+h1{font-size:1.75rem;line-height:1.25;margin:0 0 .3rem}h2{font-size:1.15rem;margin:2.2rem 0 .6rem}
+a{color:#0b5}nav{margin:0 0 2.5rem}table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem}
+th,td{border-bottom:1px solid #e3e3e0;padding:.42rem .6rem;text-align:left}
+th{font-weight:600;background:#f6f6f4}blockquote{margin:1.2rem 0;padding:.2rem 0 .2rem 1rem;
+border-left:3px solid #ddd;color:#444}code{background:#f2f2ef;padding:.1rem .3rem;border-radius:3px}
+.sub{color:#666;font-size:.9rem;margin:0 0 2rem}hr{border:0;border-top:1px solid #e3e3e0;margin:2.5rem 0}
+ul{padding-left:1.2rem}footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid #e3e3e0;
+color:#666;font-size:.9rem}
+@media(prefers-color-scheme:dark){body{background:#141413;color:#e8e6e3}th{background:#1e1e1c}
+th,td{border-color:#2e2e2b}code{background:#232320}a{color:#5c9}blockquote{border-color:#333;color:#aaa}
+footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>PJM Queue — Note 009</h1><p class="sub">I was counting the wrong thing. Counted properly, it is worse.</p>
+<p><strong>I was counting the wrong thing. Counted properly, it is worse.</strong></p>
+<p><em>Kenneth · 2026-08-21</em></p>
+<p>*Source: Lawrence Berkeley National Laboratory, Queued Up 2026 Edition (CC BY 4.0),</p>
+<p>complete interconnection request dataset through end-2025. Analysis my own.*</p>
+<hr>
+<h2>Where this came from</h2>
+<p>I sent Notes 001–008 to <strong>Joe Rand at Lawrence Berkeley National Laboratory</strong>, who</p>
+<p>publishes the dataset they are built on, and asked him to correct me rather than</p>
+<p>encourage me.</p>
+<p>He was straight about what he had not done — *"I do not currently have capacity to</p>
+<p>try to reproduce the analysis"* — so **nothing here is verified by LBNL and I am not</p>
+<p>claiming it is.** But he made one suggestion:</p>
+<blockquote>
+<p>*"One thing I would suggest is looking at outcomes weighted by capacity (MW),</p>
+<p>rather than simply counts of interconnection requests, since the capacity metric</p>
+<p>is more relevant for electric system operations and decision making."*</p>
+</blockquote>
+<p><strong>Every previous note counted requests.</strong> A 2 MW rooftop array and a 900 MW plant</p>
+<p>each counted once. He is right that the grid does not care how many requests failed</p>
+<p>— it cares how much capacity failed.</p>
+<p><strong>I expected this to soften my headline.</strong> The obvious objection to "93% of requests</p>
+<p>fail" is that queues fill with small speculative applications that fail cheaply</p>
+<p>while serious projects proceed. If that were true, weighting by megawatts would</p>
+<p>pull the number down.</p>
+<p>It does the opposite.</p>
+<hr>
+<h2>PJM, both ways</h2>
+<table><thead><tr><th>Cohort</th><th>By request count</th><th><strong>By megawatt</strong></th><th>Requests</th><th>GW</th></tr></thead><tbody>
+<tr><td>pre-2014</td><td>70.4%</td><td><strong>82.5%</strong></td><td>2,449</td><td>369.2</td></tr>
+<tr><td>2014–17</td><td>73.3%</td><td><strong>75.3%</strong></td><td>1,150</td><td>108.6</td></tr>
+<tr><td><strong>2018–21</strong></td><td><strong>93.4%</strong></td><td><strong>97.0%</strong></td><td>2,418</td><td>204.1</td></tr>
+<tr><td>2022–25</td><td>100.0%</td><td>100.0%</td><td>353</td><td>35.9</td></tr>
+</tbody></table>
+<p><strong>Every cohort is worse measured by capacity.</strong> The headline from Note 002 moves</p>
+<p>from 93.4% to <strong>97.0%</strong>.</p>
+<hr>
+<h2>And it is not a PJM effect</h2>
+<p>2018–21 cohort, operators with at least 30 terminal outcomes:</p>
+<table><thead><tr><th>Operator</th><th>By count</th><th>By MW</th><th>Shift</th><th>n</th><th>GW</th></tr></thead><tbody>
+<tr><td>IP</td><td>48.8%</td><td>93.4%</td><td><strong>+44.6</strong></td><td>84</td><td>8.8</td></tr>
+<tr><td>SRP</td><td>61.7%</td><td>85.3%</td><td>+23.6</td><td>47</td><td>16.9</td></tr>
+<tr><td>NWMT</td><td>75.9%</td><td>94.5%</td><td>+18.6</td><td>58</td><td>5.3</td></tr>
+<tr><td>BPA</td><td>88.3%</td><td>99.4%</td><td>+11.1</td><td>77</td><td>30.4</td></tr>
+<tr><td>ISO-NE</td><td>82.6%</td><td>93.1%</td><td>+10.5</td><td>425</td><td>34.9</td></tr>
+<tr><td>DUKE</td><td>89.6%</td><td>96.6%</td><td>+7.1</td><td>182</td><td>29.5</td></tr>
+<tr><td>NYISO</td><td>94.6%</td><td>98.8%</td><td>+4.3</td><td>515</td><td>75.9</td></tr>
+<tr><td><strong>PJM</strong></td><td><strong>93.4%</strong></td><td><strong>97.0%</strong></td><td><strong>+3.6</strong></td><td>2,418</td><td>204.1</td></tr>
+<tr><td><strong>ERCOT</strong></td><td><strong>60.7%</strong></td><td><strong>63.2%</strong></td><td><strong>+2.6</strong></td><td>544</td><td>93.9</td></tr>
+<tr><td>CAISO</td><td>96.3%</td><td>98.4%</td><td>+2.1</td><td>510</td><td>194.7</td></tr>
+<tr><td>SPP</td><td>96.2%</td><td>97.4%</td><td>+1.2</td><td>290</td><td>48.2</td></tr>
+<tr><td><strong>FPL</strong></td><td><strong>19.4%</strong></td><td><strong>20.0%</strong></td><td><strong>+0.6</strong></td><td>72</td><td>7.9</td></tr>
+<tr><td>MISO</td><td>95.2%</td><td>95.0%</td><td>−0.3</td><td>816</td><td>120.4</td></tr>
+<tr><td>PNM</td><td>95.8%</td><td>79.6%</td><td><strong>−16.3</strong></td><td>120</td><td>8.6</td></tr>
+</tbody></table>
+<p>**Twenty-one of twenty-five operators look worse weighted by capacity than by</p>
+<p>count.** Only PNM improves materially. MISO is flat.</p>
+<hr>
+<h2>What that means, and what it does not</h2>
+<p>**The plain reading: larger projects are withdrawn more often than smaller ones,</p>
+<p>nearly everywhere.**</p>
+<p>That is the opposite of the comfortable assumption, and it was invisible while I was</p>
+<p>counting requests. A queue is not mostly small speculative noise failing harmlessly</p>
+<p>around serious projects that proceed. **On this data the serious large projects fail</p>
+<p>at a higher rate.**</p>
+<p><strong>Why, I do not know, and the dataset does not say.</strong> Larger projects trigger heavier</p>
+<p>network upgrade obligations, longer study timelines and greater cost-allocation</p>
+<p>exposure. All plausible. <strong>None of them tested here.</strong> As with every previous note:</p>
+<p>the data shows what happened, not why.</p>
+<p><strong>One caution about the biggest numbers.</strong> IP, SRP and NWMT show the largest shifts</p>
+<p>on small samples, where a handful of big withdrawals dominate. Those shifts are real</p>
+<p>but fragile. <strong>PJM's +3.6 across 2,418 requests and 204 GW is the robust one.</strong></p>
+<hr>
+<h2>Two earlier findings, tested and standing</h2>
+<p><strong>ERCOT is still the outlier under either metric</strong> — 60.7% by count, 63.2% by</p>
+<p>capacity, on 93.9 GW of terminal outcomes. This was the claim I was least sure of</p>
+<p>when I published Note 003, and it is the one that has held up best. **A</p>
+<p>small-sample explanation is now closed off.**</p>
+<p><strong>FPL holds</strong> at 19.4% and 20.0% on 72 requests and 7.9 GW. Small, but no longer</p>
+<p>dismissible as an artefact of counting.</p>
+<hr>
+<h2>Method</h2>
+<p>Terminal outcomes only — <code>withdrawn</code> and <code>operational</code>. Active requests are excluded</p>
+<p>throughout, because a project still in the queue has neither failed nor succeeded.</p>
+<p>Capacity is <code>mw_1 + mw_2 + mw_3</code> from sheet 03. Cohorts by <code>q_year</code>. Operators</p>
+<p>shown where the cohort holds at least 30 terminal outcomes.</p>
+<p><strong>Notes 001–008 stand as published.</strong> They count requests, they say so, and the</p>
+<p>figures in them are correct for what they measure. **This note does not withdraw</p>
+<p>them; it reports that they were measuring the less useful of two things.**</p>
+<hr>
+<p>*The suggestion that produced this note was Joe Rand's, offered unprompted in reply</p>
+<p>to a request to be corrected. He has not verified any of it, and any error here is</p>
+<p>mine.*</p>
+<footer>Kenneth · Oshkosh, Wisconsin · source: LBNL <em>Queued Up 2026</em> (CC BY 4.0). Analysis my own.</footer></body></html>
