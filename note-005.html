@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Note 005 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PJM Queue — Note 005 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
 font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Georgia,serif;color:#111;background:#fdfdfc}
 h1{font-size:1.75rem;line-height:1.25;margin:0 0 .3rem}h2{font-size:1.15rem;margin:2.2rem 0 .6rem}
 a{color:#0b5}nav{margin:0 0 2.5rem}table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem}
@@ -10,28 +10,28 @@ ul{padding-left:1.2rem}footer{margin-top:4rem;padding-top:1.5rem;border-top:1px 
 color:#666;font-size:.9rem}
 @media(prefers-color-scheme:dark){body{background:#141413;color:#e8e6e3}th{background:#1e1e1c}
 th,td{border-color:#2e2e2b}code{background:#232320}a{color:#5c9}blockquote{border-color:#333;color:#aaa}
-footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>Note 005</h1><p class="sub">The bigger the project, the likelier it dies.</p><p><strong>The bigger the project, the likelier it dies.</strong></p>
+footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>PJM Queue — Note 005</h1><p class="sub">The bigger the project, the likelier it dies.</p>
+<p><strong>The bigger the project, the likelier it dies.</strong></p>
 <p><em>Kenneth · 2026-08-12</em></p>
 <p><em>Source: LBNL Queued Up 2026 Edition (CC BY 4.0), through end-2025. Analysis my own.</em></p>
 <hr>
 <p>A question nobody seems to publish: <strong>does project size predict failure?</strong></p>
 <p>It does, and the relationship is clean.</p>
-<table>
-<tr><th>Nameplate</th><th>Withdrawn</th><th>Built</th><th><strong>Failure rate</strong></th><th>n</th></tr>
+<table><thead><tr><th>Nameplate</th><th>Withdrawn</th><th>Built</th><th><strong>Failure rate</strong></th><th>n</th></tr></thead><tbody>
 <tr><td>Under 20 MW</td><td>1,809</td><td>574</td><td><strong>76%</strong></td><td>2,383</td></tr>
 <tr><td>20–99 MW</td><td>1,822</td><td>407</td><td><strong>82%</strong></td><td>2,229</td></tr>
 <tr><td>100–299 MW</td><td>993</td><td>122</td><td><strong>89%</strong></td><td>1,115</td></tr>
 <tr><td>300 MW and above</td><td>602</td><td>89</td><td><strong>87%</strong></td><td>691</td></tr>
-</table>
-<p><strong>A sub-20 MW project is more than twice as likely to reach service as one over</p>
-<p>100 MW</strong> — 24% against 11%.</p>
+</tbody></table>
+<p>**A sub-20 MW project is more than twice as likely to reach service as one over</p>
+<p>100 MW** — 24% against 11%.</p>
 <h2>Why this is not obvious</h2>
 <p>The intuition runs the other way. Large projects have serious developers, real</p>
 <p>capital and professional interconnection counsel behind them. Small ones are</p>
 <p>often speculative.</p>
 <p>The data says the advantage sits with small anyway, and the plausible reason is</p>
-<p>network upgrade cost: <strong>a large interconnection request is likelier to trigger</p>
-<p>system upgrades whose allocated cost kills the economics.</strong> That is a hypothesis.</p>
+<p>network upgrade cost: **a large interconnection request is likelier to trigger</p>
+<p>system upgrades whose allocated cost kills the economics.** That is a hypothesis.</p>
 <p>This dataset does not contain upgrade costs and I have not tested it.</p>
 <h2>What to do with it</h2>
 <p><strong>If you are siting</strong>, the queue rewards being small more than it rewards being</p>
@@ -43,4 +43,5 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 <hr>
 <p>*Method: terminal outcomes only, bucketed on <code>mw_1</code>. Requests without a capacity</p>
 <p>figure excluded. Free at emp.lbl.gov/queues.*</p>
-<p><em>This is published research. Every figure is a count from a free dataset at emp.lbl.gov/queues — check it yourself rather than taking my word for it.</em></p><footer>Kenneth · commercial energy — supply contracts, bill audit, PJM queue research<br><br><br>Every figure is a count from the free LBNL dataset at <a href="https://emp.lbl.gov/queues">emp.lbl.gov/queues</a>. If you think one is wrong, tell me which and why.</footer></body></html>
+<p>*This is published research. Every figure is a count from a free dataset at emp.lbl.gov/queues — check it yourself rather than taking my word for it.</p>
+<footer>Kenneth · Oshkosh, Wisconsin · source: LBNL <em>Queued Up 2026</em> (CC BY 4.0). Analysis my own.</footer></body></html>
