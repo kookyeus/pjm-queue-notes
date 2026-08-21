@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Note 002 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PJM Queue — Note 002 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
 font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Georgia,serif;color:#111;background:#fdfdfc}
 h1{font-size:1.75rem;line-height:1.25;margin:0 0 .3rem}h2{font-size:1.15rem;margin:2.2rem 0 .6rem}
 a{color:#0b5}nav{margin:0 0 2.5rem}table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem}
@@ -10,7 +10,8 @@ ul{padding-left:1.2rem}footer{margin-top:4rem;padding-top:1.5rem;border-top:1px 
 color:#666;font-size:.9rem}
 @media(prefers-color-scheme:dark){body{background:#141413;color:#e8e6e3}th{background:#1e1e1c}
 th,td{border-color:#2e2e2b}code{background:#232320}a{color:#5c9}blockquote{border-color:#333;color:#aaa}
-footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>Note 002</h1><p class="sub">The queue is not failing at the same rate it always did. It is failing worse.</p><p><strong>The queue is not failing at the same rate it always did. It is failing worse.</strong></p>
+footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>PJM Queue — Note 002</h1><p class="sub">The queue is not failing at the same rate it always did. It is failing worse.</p>
+<p><strong>The queue is not failing at the same rate it always did. It is failing worse.</strong></p>
 <p><em>Kenneth · 2026-08-12</em></p>
 <p>*Source: Lawrence Berkeley National Laboratory, Queued Up 2026 Edition (CC BY 4.0),</p>
 <p>complete interconnection request dataset through end-2025. Analysis my own.*</p>
@@ -24,8 +25,7 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 <h2>Failure rate by the year a project filed</h2>
 <p>Only cohorts old enough to have mostly resolved can answer this. The right-hand</p>
 <p>column counts terminal outcomes only.</p>
-<table>
-<tr><th>Filed</th><th>Withdrawn</th><th>Built</th><th>Still active</th><th>Resolved</th><th><strong>Failure rate</strong></th></tr>
+<table><thead><tr><th>Filed</th><th>Withdrawn</th><th>Built</th><th>Still active</th><th>Resolved</th><th><strong>Failure rate</strong></th></tr></thead><tbody>
 <tr><td>2003</td><td>32</td><td>18</td><td>0</td><td>100%</td><td>64%</td></tr>
 <tr><td>2007</td><td>105</td><td>115</td><td>0</td><td>100%</td><td><strong>48%</strong></td></tr>
 <tr><td>2010</td><td>361</td><td>81</td><td>0</td><td>100%</td><td>82%</td></tr>
@@ -35,14 +35,14 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 <tr><td>2019</td><td>409</td><td>75</td><td>140</td><td>73%</td><td>85%</td></tr>
 <tr><td>2020</td><td>719</td><td>29</td><td>163</td><td>81%</td><td><strong>96%</strong></td></tr>
 <tr><td><strong>2021</strong></td><td><strong>819</strong></td><td><strong>0</strong></td><td>49</td><td><strong>94%</strong></td><td><strong>100%</strong></td></tr>
-</table>
+</tbody></table>
 <p><strong>The 2021 cohort is the one to look at.</strong> 819 requests withdrawn. <strong>None built.</strong></p>
 <p>And it is 94% resolved — this is not a cohort still waiting its turn.</p>
 <h2>Why that is not simply a censoring artefact</h2>
 <p>The obvious objection is that recent cohorts have had less time, so of course</p>
 <p>fewer are built. That objection holds for 2022 and 2023 and I have excluded them.</p>
-<p>It does not hold for 2021. <strong>Median time from request to operation in PJM is 3.2</p>
-<p>years</strong> (Note 001, n=1,180). A project filing in 2021 reaches the median</p>
+<p>It does not hold for 2021. **Median time from request to operation in PJM is 3.2</p>
+<p>years** (Note 001, n=1,180). A project filing in 2021 reaches the median</p>
 <p>completion date in 2024, and this dataset runs to the end of 2025 — a full year</p>
 <p>beyond it. There was time.</p>
 <p>What happened instead is that <strong>819 of them left</strong>, and 49 remain.</p>
@@ -52,8 +52,8 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 <p>Something changed around 2018–2019 and it did not change back.</p>
 <hr>
 <h2>What this means if you are holding a position</h2>
-<p><strong>If you are pricing a 2019-or-later PJM request off the historical 68%, you are</p>
-<p>using a number from a different market.</strong> The relevant base rate for anything</p>
+<p>**If you are pricing a 2019-or-later PJM request off the historical 68%, you are</p>
+<p>using a number from a different market.** The relevant base rate for anything</p>
 <p>filed since 2019 is <strong>85% at best</strong>, and for the 2020–21 clusters it is</p>
 <p>effectively total.</p>
 <p><strong>If you own a 2021-vintage request that is still active</strong>, you are one of 49</p>
@@ -77,4 +77,8 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 <p>Cohorts under 30 requests, and 2022 onward, are omitted as too unresolved to</p>
 <p>interpret. Every figure is a count from published data. The file is free at</p>
 <p>emp.lbl.gov/queues if you want to check my arithmetic.*</p>
-<p><em>This is published research. Every figure is a count from a free dataset at emp.lbl.gov/queues — check it yourself rather than taking my word for it.</em></p><footer>Kenneth · commercial energy — supply contracts, bill audit, PJM queue research<br><br><br>Every figure is a count from the free LBNL dataset at <a href="https://emp.lbl.gov/queues">emp.lbl.gov/queues</a>. If you think one is wrong, tell me which and why.</footer></body></html>
+<p>*This is published research. Every figure is a count from a free dataset at emp.lbl.gov/queues — check it yourself rather than taking my word for it.</p>
+<blockquote>
+<p><strong>Later — 2026-08-21.</strong> Joe Rand of LBNL, who publishes this dataset, suggested weighting outcomes by capacity rather than counting requests. <strong>Doing so makes every figure on this page worse, not better</strong> — PJM's 2018–21 cohort moves from 93.4% to 97.0%, and 21 of 25 operators deteriorate. ERCOT survives as the outlier either way. See <strong>Note 009</strong>. This page stands as published; it counts requests and says so.</p>
+</blockquote>
+<footer>Kenneth · Oshkosh, Wisconsin · source: LBNL <em>Queued Up 2026</em> (CC BY 4.0). Analysis my own.</footer></body></html>
