@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Note 006 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PJM Queue — Note 006 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
 font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Georgia,serif;color:#111;background:#fdfdfc}
 h1{font-size:1.75rem;line-height:1.25;margin:0 0 .3rem}h2{font-size:1.15rem;margin:2.2rem 0 .6rem}
 a{color:#0b5}nav{margin:0 0 2.5rem}table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem}
@@ -10,7 +10,8 @@ ul{padding-left:1.2rem}footer{margin-top:4rem;padding-top:1.5rem;border-top:1px 
 color:#666;font-size:.9rem}
 @media(prefers-color-scheme:dark){body{background:#141413;color:#e8e6e3}th{background:#1e1e1c}
 th,td{border-color:#2e2e2b}code{background:#232320}a{color:#5c9}blockquote{border-color:#333;color:#aaa}
-footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>Note 006</h1><p class="sub">Half a percent. That is how much queued battery capacity has been built.</p><p><strong>Half a percent. That is how much queued battery capacity has been built.</strong></p>
+footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>PJM Queue — Note 006</h1><p class="sub">Half a percent. That is how much queued battery capacity has been built.</p>
+<p><strong>Half a percent. That is how much queued battery capacity has been built.</strong></p>
 <p><em>Kenneth · 2026-08-12</em></p>
 <p><em>Source: LBNL Queued Up 2026 Edition (CC BY 4.0), through end-2025. Analysis my own.</em></p>
 <hr>
@@ -18,8 +19,7 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 <p>picture is worse — because the technologies that fail most are the ones filing</p>
 <p>the largest requests.</p>
 <h2>Gigawatts requested against gigawatts operating, PJM, all time</h2>
-<table>
-<tr><th>Technology</th><th>Queued</th><th>Built</th><th><strong>Conversion</strong></th></tr>
+<table><thead><tr><th>Technology</th><th>Queued</th><th>Built</th><th><strong>Conversion</strong></th></tr></thead><tbody>
 <tr><td>Gas</td><td>334.8 GW</td><td>60.2 GW</td><td><strong>18.0%</strong></td></tr>
 <tr><td>Wind</td><td>103.3 GW</td><td>11.5 GW</td><td>11.1%</td></tr>
 <tr><td>Solar</td><td>193.6 GW</td><td>13.7 GW</td><td><strong>7.1%</strong></td></tr>
@@ -27,25 +27,26 @@ footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a hre
 <tr><td><strong>Battery</strong></td><td><strong>77.9 GW</strong></td><td><strong>0.4 GW</strong></td><td><strong>0.5%</strong></td></tr>
 <tr><td>Solar + storage</td><td>41.8 GW</td><td>0.0 GW</td><td><strong>0.1%</strong></td></tr>
 <tr><td><strong>Offshore wind</strong></td><td><strong>46.1 GW</strong></td><td><strong>0.0 GW</strong></td><td><strong>0.0%</strong></td></tr>
-</table>
+</tbody></table>
 <p><strong>Of 77.9 GW of battery storage requested in PJM, 0.4 GW is operating.</strong></p>
 <p><strong>Of 46.1 GW of offshore wind, none.</strong></p>
 <h2>Why this matters more than the project count</h2>
 <p>A capacity forecast built on the queue is building on 164 GW of solar, battery,</p>
-<p>offshore wind and hybrid that has historically converted at <strong>under two per</p>
-<p>cent.</strong> Gas — the least fashionable line on that table — has converted at</p>
+<p>offshore wind and hybrid that has historically converted at **under two per</p>
+<p>cent.** Gas — the least fashionable line on that table — has converted at</p>
 <p>eighteen, and is nearly half the megawatts ever requested.</p>
-<p><strong>When PJM's capacity auction cleared at the FERC cap of $329.17/MW-day for</p>
-<p>2026/27, the queue was full.</strong> Those two facts sit together uncomfortably, and</p>
+<p>**When PJM's capacity auction cleared at the FERC cap of $329.17/MW-day for</p>
+<p>2026/27, the queue was full.** Those two facts sit together uncomfortably, and</p>
 <p>they are the same fact: <strong>a full queue is not supply.</strong></p>
 <h2>The caveat that must be stated</h2>
 <p>Battery and hybrid are recent technologies. Much of that 77.9 GW was filed within</p>
 <p>the last four years and has not had time to be built — the conversion figure is</p>
 <p>depressed by youth as well as by failure.</p>
-<p><strong>But Note 002 already tested that objection on the 2021 cohort and it did not</p>
-<p>hold</strong>: 819 requests withdrawn, none built, 94% resolved. Youth explains part of</p>
+<p>**But Note 002 already tested that objection on the 2021 cohort and it did not</p>
+<p>hold**: 819 requests withdrawn, none built, 94% resolved. Youth explains part of</p>
 <p>this. It does not explain 0.5%.</p>
 <hr>
 <p>*Method: <code>mw_1</code> summed by <code>type_clean</code>, all vintages, <code>entity = PJM</code>. Conversion</p>
 <p>is operating MW over all MW ever requested. Free at emp.lbl.gov/queues.*</p>
-<p><em>This is published research. Every figure is a count from a free dataset at emp.lbl.gov/queues — check it yourself rather than taking my word for it.</em></p><footer>Kenneth · commercial energy — supply contracts, bill audit, PJM queue research<br><br><br>Every figure is a count from the free LBNL dataset at <a href="https://emp.lbl.gov/queues">emp.lbl.gov/queues</a>. If you think one is wrong, tell me which and why.</footer></body></html>
+<p>*This is published research. Every figure is a count from a free dataset at emp.lbl.gov/queues — check it yourself rather than taking my word for it.</p>
+<footer>Kenneth · Oshkosh, Wisconsin · source: LBNL <em>Queued Up 2026</em> (CC BY 4.0). Analysis my own.</footer></body></html>
