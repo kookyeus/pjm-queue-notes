@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wisconsin Note 001 — WPS demand charges</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wisconsin Note 001 — PJM Queue</title><style>*{box-sizing:border-box}body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 6rem;
 font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Georgia,serif;color:#111;background:#fdfdfc}
 h1{font-size:1.75rem;line-height:1.25;margin:0 0 .3rem}h2{font-size:1.15rem;margin:2.2rem 0 .6rem}
 a{color:#0b5}nav{margin:0 0 2.5rem}table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem}
@@ -11,129 +11,131 @@ color:#666;font-size:.9rem}
 @media(prefers-color-scheme:dark){body{background:#141413;color:#e8e6e3}th{background:#1e1e1c}
 th,td{border-color:#2e2e2b}code{background:#232320}a{color:#5c9}blockquote{border-color:#333;color:#aaa}
 footer,.sub{color:#999}hr{border-color:#2e2e2b}}</style></head><body><nav><a href="./">← all notes</a></nav><h1>Wisconsin Note 001</h1><p class="sub">Wisconsin Public Service charges $0.00 per kW for demand outside a ten-hour window. Whether that saves you anything depends on one thing, and it is not your peak.</p>
-
 <p><strong>Wisconsin Public Service charges $0.00 per kW for demand outside a ten-hour window. Whether that saves you anything depends on one thing, and it is not your peak.</strong></p>
-
-<p><em>Kenneth · Oshkosh · 2026-08-14</em> *Source: Wisconsin Public Service filed tariff, P.S.C.W. Volume No. 7, Amendment 802, effective 1 January 2026. Every figure below is read from a filed sheet.*</p>
-
+<p><em>Kenneth · Oshkosh · 2026-08-14</em></p>
+<p>*Source: Wisconsin Public Service filed tariff, P.S.C.W. Volume No. 7, Amendment 802,</p>
+<p>effective 1 January 2026. Every figure below is read from a filed sheet.*</p>
 <hr>
-
-<p>Most Fox Valley plants are on Wisconsin Public Service Schedule Cg-20. It applies once a site has exceeded either 100 kW of demand or 25,000 kWh a month.</p>
-
-<p>On that schedule the demand charge is <strong>$20.080 per kW in summer</strong> and <strong>$13.052 per kW in winter</strong>. Those are large numbers. On a 300 kW site the summer figure is just over $6,000 a month.</p>
-
+<p>Most Fox Valley plants are on Wisconsin Public Service Schedule Cg-20. It applies</p>
+<p>once a site has exceeded either 100 kW of demand or 25,000 kWh a month.</p>
+<p>On that schedule the demand charge is <strong>$20.080 per kW in summer</strong> and **$13.052</p>
+<p>per kW in winter**. Those are large numbers. On a 300 kW site the summer figure is</p>
+<p>just over $6,000 a month.</p>
 <p><strong>But they only apply inside a window.</strong></p>
-
-<table>
-<tr><th>Season</th><th>On-peak window</th><th>Demand charge</th></tr>
+<table><thead><tr><th>Season</th><th>On-peak window</th><th>Demand charge</th></tr></thead><tbody>
 <tr><td><strong>Summer</strong> (Jun–Sep)</td><td>8AM – 6PM, weekdays</td><td><strong>$20.080 / kW</strong></td></tr>
 <tr><td><strong>Winter</strong> (Oct–May)</td><td>8AM – 1PM and 5PM – 9PM, weekdays</td><td><strong>$13.052 / kW</strong></td></tr>
 <tr><td><strong>All other hours</strong></td><td>nights, weekends, every holiday</td><td><strong>$0.00 / kW</strong></td></tr>
-</table>
-
+</tbody></table>
 <p>Not reduced. Zero.</p>
-
 <hr>
-
 <h2>Why this is worth ten minutes of your time</h2>
-
-<p><strong>CORRECTED 2026-08-16.</strong> The first version of this note said that if your peak falls outside the window "you pay nothing for demand at all", and put the gap at about $24,750 a year. <strong>That was wrong, and I found it by building the calculator rather than doing the arithmetic by hand.</strong> The corrected figures are below and the reasoning is at the foot.</p>
-
-<p>Your demand charge is set by your highest fifteen-minute interval <strong>that falls inside the window</strong> — not by your highest interval overall. Moving a single spike out of the window does not take the charge to zero. It takes it down to whatever your <em>next</em> highest in-window interval is, and for most plants that is still substantial.</p>
-
+<p><strong>CORRECTED 2026-08-16.</strong> The first version of this note said that if your peak</p>
+<p>falls outside the window "you pay nothing for demand at all", and put the gap at</p>
+<p>about $24,750 a year. **That was wrong, and I found it by building the calculator</p>
+<p>rather than doing the arithmetic by hand.** The corrected figures are below and</p>
+<p>the reasoning is at the foot.</p>
+<p>Your demand charge is set by your highest fifteen-minute interval **that falls</p>
+<p>inside the window** — not by your highest interval overall. Moving a single spike</p>
+<p>out of the window does not take the charge to zero. It takes it down to whatever</p>
+<p>your <em>next</em> highest in-window interval is, and for most plants that is still</p>
+<p>substantial.</p>
 <p>Three cases on a 120 kW site, summer, all computed from interval data:</p>
-
-<table>
-<tr><th></th><th>Monthly bill</th><th>Against Cg-5</th></tr>
+<table><thead><tr><th></th><th>Monthly bill</th><th>Against Cg-5</th></tr></thead><tbody>
 <tr><td><strong>Daytime plant</strong> — 74 kW during the window, peak at 11AM</td><td>Cg-5 is cheaper</td><td><strong>Cg-20 costs you $407 a month more</strong></td></tr>
 <tr><td><strong>Same plant, peak moved to 2AM</strong></td><td>Cg-20 $4,137</td><td><strong>saves $6,210 a year</strong></td></tr>
 <tr><td><strong>True night operation</strong> — nothing drawn 8AM–6PM</td><td>Cg-20 $2,444</td><td><strong>saves $35,863 a year</strong></td></tr>
-</table>
-
-<p><strong>So the size of the prize depends entirely on how much load you have in the window, and the honest range is nothing at all to about $36,000.</strong></p>
-
+</tbody></table>
+<p>**So the size of the prize depends entirely on how much load you have in the</p>
+<p>window, and the honest range is nothing at all to about $36,000.**</p>
 <p>Two things follow that matter more than the headline:</p>
-
-<p>1. <strong>Cg-20 is the wrong schedule for an ordinary daytime plant.</strong> On the first    row it costs $407 a month <em>more</em> than the flat rate. Anyone who tells you    time-of-use is always cheaper has not run the numbers. 2. <strong>Moving one spike is worth much less than most people assume.</strong> The value is    in shifting <em>load</em>, not in shifting a <em>peak</em> — and only a plant that can    genuinely clear the window sees the large number.</p>
-
-<p>Note the middle column. <strong>Cg-20 is the wrong schedule for a plant that peaks at eleven in the morning</strong> — it costs about $350 a month more than the flat rate. Anyone who tells you time-of-use is always cheaper has not done this arithmetic.</p>
-
+<p>1. <strong>Cg-20 is the wrong schedule for an ordinary daytime plant.</strong> On the first</p>
+<p>row it costs $407 a month <em>more</em> than the flat rate. Anyone who tells you</p>
+<p>time-of-use is always cheaper has not run the numbers.</p>
+<p>2. <strong>Moving one spike is worth much less than most people assume.</strong> The value is</p>
+<p>in shifting <em>load</em>, not in shifting a <em>peak</em> — and only a plant that can</p>
+<p>genuinely clear the window sees the large number.</p>
+<p>Note the middle column. **Cg-20 is the wrong schedule for a plant that peaks at</p>
+<p>eleven in the morning** — it costs about $350 a month more than the flat rate.</p>
+<p>Anyone who tells you time-of-use is always cheaper has not done this arithmetic.</p>
 <hr>
-
 <h2>The second clause, which is the one that catches people</h2>
-
 <p>Cg-20's customer demand charge — $2.610 per kW — is billed on:</p>
-
-<blockquote><em>"maximum demand during the current <strong>or preceding 11 months</strong>"</em></blockquote>
-
-<p><strong>A single fifteen-minute interval is therefore paid for twelve times.</strong> A compressor test, a failed soft-start, a one-off simultaneous startup after an outage. It sets a floor under your bill for a year, and nothing on the bill announces that it has happened.</p>
-
+<blockquote>
+<p><em>"maximum demand during the current <strong>or preceding 11 months</strong>"</em></p>
+</blockquote>
+<p><strong>A single fifteen-minute interval is therefore paid for twelve times.</strong> A</p>
+<p>compressor test, a failed soft-start, a one-off simultaneous startup after an</p>
+<p>outage. It sets a floor under your bill for a year, and nothing on the bill</p>
+<p>announces that it has happened.</p>
 <p>The same ratchet applies on Schedule Cp, above 1,000 kW.</p>
-
 <hr>
-
 <h2>And there are forty-five seats nobody mentions</h2>
-
-<p>Two optional schedules exist alongside the standard ones: <strong>Cg20-RR</strong> and <strong>Cp-RR</strong>, Response Rewards. They cut the demand charge substantially in exchange for exposure to critical peak events.</p>
-
-<table>
-<tr><th></th><th>Cg-20</th><th><strong>Cg20-RR</strong></th></tr>
+<p>Two optional schedules exist alongside the standard ones: <strong>Cg20-RR</strong> and</p>
+<p><strong>Cp-RR</strong>, Response Rewards. They cut the demand charge substantially in exchange</p>
+<p>for exposure to critical peak events.</p>
+<table><thead><tr><th></th><th>Cg-20</th><th><strong>Cg20-RR</strong></th></tr></thead><tbody>
 <tr><td>Summer on-peak demand</td><td>$20.080 / kW</td><td><strong>$15.060 / kW</strong></td></tr>
 <tr><td>Winter on-peak demand</td><td>$13.052 / kW</td><td><strong>$9.789 / kW</strong></td></tr>
-</table>
-
+</tbody></table>
 <p><strong>A 25% cut on the largest charge on the bill.</strong></p>
-
 <p>And the tariff says this, in writing:</p>
-
-<blockquote><em>"The Company reserves the right to limit participation to <strong>25 customers</strong>."</em></blockquote>
-
-<p>Twenty-five on Cg20-RR. Twenty on Cp-RR. <strong>Forty-five seats in the entire WPS territory.</strong></p>
-
+<blockquote>
+<p><em>"The Company reserves the right to limit participation to <strong>25 customers</strong>."</em></p>
+</blockquote>
+<p>Twenty-five on Cg20-RR. Twenty on Cp-RR. **Forty-five seats in the entire WPS</p>
+<p>territory.**</p>
 <p><strong>Now the other half, which I have since read — and it changes the answer.</strong></p>
-
-<p>The trade for that discount is <strong>Critical Peak pricing: $0.46946 per kWh</strong>. That is 8.5 times the ordinary on-peak rate. It can be called <strong>up to 300 hours a year</strong>, *"anytime during On-Peak or Off-Peak periods at the sole discretion of the Company"*, on <strong>one hour's notice</strong>.</p>
-
+<p>The trade for that discount is <strong>Critical Peak pricing: $0.46946 per kWh</strong>. That</p>
+<p>is 8.5 times the ordinary on-peak rate. It can be called **up to 300 hours a</p>
+<p>year**, *"anytime during On-Peak or Off-Peak periods at the sole discretion of the</p>
+<p>Company"*, on <strong>one hour's notice</strong>.</p>
 <p>On the same 120 kW site:</p>
-
-<table>
-<tr><th>Critical peak hours called</th><th>Your net position</th></tr>
+<table><thead><tr><th>Critical peak hours called</th><th>Your net position</th></tr></thead><tbody>
 <tr><td>0</td><td><strong>+$10,675</strong></td></tr>
 <tr><td>100</td><td>+$5,704</td></tr>
 <tr><td>200</td><td>+$734</td></tr>
 <tr><td><strong>215</strong></td><td><strong>break-even</strong></td></tr>
 <tr><td>300 — the permitted maximum</td><td><strong>−$4,237</strong></td></tr>
-</table>
-
+</tbody></table>
 <p><strong>Break-even is 215 hours. They may call 300.</strong></p>
-
 <p>And clause 2 of the Special Terms is the sentence to read twice:</p>
-
-<blockquote>*"Any customer choosing to be served on this rate schedule thereby waives all rights to any billing adjustments arising from a claim that the bill for the customer's service would be cheaper on any alternative rate schedule for any period of time…"*</blockquote>
-
-<p><strong>So Response Rewards is not a discount. It is a demand response contract.</strong> It pays if you can genuinely drop load within an hour. If you simply keep running through the events, you lose money — and you have signed away the route to complain about it.</p>
-
-<p><strong>The qualifying question is therefore not "would you like 25% off your demand charge."</strong> It is: *can you shed load on an hour's notice, up to 300 hours a year, and what does an hour of downtime cost you?* For a heat treater between batches or a moulder able to stagger startups, that may be an easy yes. For a continuous line, it is a trap.</p>
-
+<blockquote>
+<p>*"Any customer choosing to be served on this rate schedule thereby waives all</p>
+<p>rights to any billing adjustments arising from a claim that the bill for the</p>
+<p>customer's service would be cheaper on any alternative rate schedule for any</p>
+<p>period of time…"*</p>
+</blockquote>
+<p><strong>So Response Rewards is not a discount. It is a demand response contract.</strong> It</p>
+<p>pays if you can genuinely drop load within an hour. If you simply keep running</p>
+<p>through the events, you lose money — and you have signed away the route to</p>
+<p>complain about it.</p>
+<p>**The qualifying question is therefore not "would you like 25% off your demand</p>
+<p>charge."** It is: *can you shed load on an hour's notice, up to 300 hours a year,</p>
+<p>and what does an hour of downtime cost you?* For a heat treater between batches or</p>
+<p>a moulder able to stagger startups, that may be an easy yes. For a continuous</p>
+<p>line, it is a trap.</p>
 <p>I would rather tell you that than sell you the first half of it.</p>
-
 <hr>
-
 <h2>What I am not telling you</h2>
-
-<p><strong>Power factor.</strong> WPS does have a clause — the benchmark is 0.80, and above it you receive a credit — but the money is in the hundreds of dollars a year, not the thousands. It is a real line and a small one, and anybody leading a pitch with it is reaching for the smallest number available.</p>
-
-<p><strong>Anything about your specific site.</strong> I have read the tariff. I have not seen your bills.</p>
-
+<p><strong>Power factor.</strong> WPS does have a clause — the benchmark is 0.80, and above it you</p>
+<p>receive a credit — but the money is in the hundreds of dollars a year, not the</p>
+<p>thousands. It is a real line and a small one, and anybody leading a pitch with it</p>
+<p>is reaching for the smallest number available.</p>
+<p><strong>Anything about your specific site.</strong> I have read the tariff. I have not seen</p>
+<p>your bills.</p>
 <hr>
-
 <h2>Why this is here</h2>
-
-<p>I read filed tariffs and publish what I find. Every figure above is sourced to a sheet number so you can check it against Wisconsin Public Service's own filing rather than take my word for it.</p>
-
-<p><strong>This is published research, not a service.</strong> I am not offering to audit anyone's bills and I am not asking anyone to send billing data. If something here applies to your site, take it to whoever handles your energy contracts — it is yours to use, free, and you do not need me in order to act on it.</p>
-
+<p>I read filed tariffs and publish what I find. Every figure above is sourced to a</p>
+<p>sheet number so you can check it against Wisconsin Public Service's own filing</p>
+<p>rather than take my word for it.</p>
+<p><strong>This is published research, not a service.</strong> I am not offering to audit anyone's</p>
+<p>bills and I am not asking anyone to send billing data. If something here applies</p>
+<p>to your site, take it to whoever handles your energy contracts — it is yours to</p>
+<p>use, free, and you do not need me in order to act on it.</p>
 <p><em>Kenneth · Oshkosh, Wisconsin</em></p>
-
-<p>*Sheets referenced: Cg-1 E6.00, Cg-5 E6.01, Cg-20 E6.10–E6.11, Cg20-RR E6.15, Cp E6.60, Cp-RR E6.70, Cp Rules E6.65, Cp-I2 E6.80. P.S.C.W. Volume No. 7, Amendment 802, PSCW Order 6690-UR-128. All free at wisconsinpublicservice.com/company/wi-tariffs — check me.*</p>
-<footer>Kenneth · Oshkosh, Wisconsin · published research</footer></body></html>
+<p>*Sheets referenced: Cg-1 E6.00, Cg-5 E6.01, Cg-20 E6.10–E6.11, Cg20-RR E6.15,</p>
+<p>Cp E6.60, Cp-RR E6.70, Cp Rules E6.65, Cp-I2 E6.80. P.S.C.W. Volume No. 7,</p>
+<p>Amendment 802, PSCW Order 6690-UR-128. All free at</p>
+<p>wisconsinpublicservice.com/company/wi-tariffs — check me.*</p>
+<footer>Kenneth · Oshkosh, Wisconsin · source: LBNL <em>Queued Up 2026</em> (CC BY 4.0). Analysis my own.</footer></body></html>
